@@ -41,20 +41,20 @@
     <link rel="preload"
         href="https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-normal.woff2"
         as="font" crossorigin type="font/woff2">
-    <link rel="preconnect" href="https://globo-ab.globo.com">
-    <link rel="dns-prefetch" href="https://globo-ab.globo.com">
-    <link rel="preconnect" href="https://horizon.globo.com">
-    <link rel="dns-prefetch" href="https://horizon.globo.com">
-    <link rel="preconnect" href="https://horizon-schemas.globo.com">
-    <link rel="dns-prefetch" href="https://horizon-schemas.globo.com">
-    <link rel="preconnect" href="https://horizon-track.globo.com">
-    <link rel="dns-prefetch" href="https://horizon-track.globo.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com"><!-- AMP PROJECT -->
-    <link rel="preconnect" href="https://cdn.ampproject.org">
+    <link rel="preconnect" href="">
+    <link rel="dns-prefetch" href="">
+    <link rel="preconnect" href="">
+    <link rel="dns-prefetch" href="">
+    <link rel="preconnect" href="">
+    <link rel="dns-prefetch" href="">
+    <link rel="preconnect" href="">
+    <link rel="dns-prefetch" href="">
+    <link rel="preconnect" href="">
+    <link rel="dns-prefetch" href=""><!-- AMP PROJECT -->
+    <link rel="preconnect" href="">
     <link rel="dns-prefetch" href="https://cdn.ampproject.org"><!-- PLAYER DE VIDEO -->
-    <link rel="preconnect" href="https://p.glbimg.com">
-    <link rel="dns-prefetch" href="https://p.glbimg.com"><!-- Estatico de Videos -->
+    <link rel="preconnect" href="">
+    <link rel="dns-prefetch" href=""><!-- Estatico de Videos -->
     <link rel="preconnect" href="">
     <link rel="dns-prefetch" href="">
     <link rel="preload" href="https://cdn.ampproject.org/v0.js" as="script">
@@ -254,11 +254,11 @@
                 CLIENT_ID: "cobertura-ao-vivo-frontend@apps.globoid",
                 REDIRECT_URL: "",
                 URL: "",
-                REALM: "globo.com"
+                REALM: ""
             },
             CHARTBEAT: {
                 ACCOUNT_ID: "65728",
-                DOMAIN: "g1.globo.com"
+                DOMAIN: ""
             }
         };
     </script>
@@ -302,7 +302,7 @@
     </script>
     <script>
         var glb = glb || {};
-        glb.fnBuscaUrl = "g1.globo.com/busca";
+        glb.fnBuscaUrl = "";
     </script>
     <script id="SETTINGS">
         cdaaas = window.cdaaas || {};
@@ -312,7 +312,7 @@
             HAS_FEATURE_FLAG_SECTION: true,
             ...cdaaas.SETTINGS,
             SERVICE_WORKER: {
-                url: "https://g1.globo.com/sw.js",
+                url: "",
                 active: true
             }
         }
@@ -7198,7 +7198,7 @@
                     window.cdaaas.SETTINGS = window.cdaaas.SETTINGS || {};
 
                     window.cdaaas.SETTINGS.COMMENTS_ALLOW_INTERACTION = 1;
-                    window.cdaaas.SETTINGS.COMMENTS_CONFIG = JSON.parse('{"rolloutSection":{"allowed":true},"phaseoutSection":{"phaseOut":true},"config":{"root_url":"https:\/\/g1.comentarios.globo.com","cacique_url":"https:\/\/comentarios2-id.globo.com\/api\/auth\/oidc\/authorize\/g1","scripts":["https:\/\/g1.comentarios.globo.com\/assets\/js\/embed.js","https:\/\/g1.comentarios.globo.com\/assets\/js\/count.js"],"story_mode":"COMMENTS","collapsed":true,"requireUserAuthentication":true}}');
+                    window.cdaaas.SETTINGS.COMMENTS_CONFIG = JSON.parse('{"rolloutSection":{"allowed":true},"phaseoutSection":{"phaseOut":true},"config":}');
                     window.cdaaas.SETTINGS.COMMENTS_CONFIG.SENTRY_DSN = "https://957b0b3a18c149f4814f2525021e644f@web.sentry.globoi.com/786";
                     window.cdaaas.SETTINGS.COMMENTS_CUSTOM_CSS_URL = "https://s3.glbimg.com/v1/AUTH_c5dfc0eef7ee40d68bdd0993be881440/coral-custom-style/style.css";
                 </script>
@@ -7238,7 +7238,7 @@
             waitForGlobal('globoAB', function () {
                 waitForGlobal('buildGeoTrackingLoadUp', function () {
                     window.buildGeoTrackingLoadUp(
-                        'https://globo-ab.globo.com',
+                        '',
                         false,
                         'g1',
                         'desktop',
@@ -7319,7 +7319,28 @@
     </script>
     <script type="text/javascript" src="https://novabarra.globo.com/webcomponent/index.js" async></script>
     <nova-barra-globocom tenant-id="g1"
-        products-config="{&#34;tenantId&#34;: &#34;g1&#34;, &#34;assine&#34;: {&#34;showButton&#34;: true}, &#34;login&#34;: {&#34;showButton&#34;: true}, &#34;defaultProducts&#34;: [{&#34;tenantId&#34;: &#34;globocom&#34;, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}, {&#34;tenantId&#34;: &#34;g1&#34;, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}, {&#34;tenantId&#34;: &#34;ge&#34;, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}, {&#34;tenantId&#34;: &#34;gshow&#34;, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}, {&#34;tenantId&#34;: &#34;globoplay&#34;, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}], &#34;additionalProducts&#34;: [{&#34;tenantId&#34;: &#34;oglobo&#34;, &#34;name&#34;: &#34;o globo&#34;, &#34;url&#34;: &#34;https://oglobo.globo.com/&#34;, &#34;ariaLabel&#34;: &#34;Ir para O Globo&#34;, &#34;accessKey&#34;: &#34;&#34;, &#34;customStyle&#34;: {&#34;color&#34;: &#34;#1E4C9A&#34;}, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}, {&#34;tenantId&#34;: &#34;g1&#34;, &#34;name&#34;: &#34;guia de compras&#34;, &#34;url&#34;: &#34;https://g1.globo.com/guia/guia-de-compras/&#34;, &#34;ariaLabel&#34;: &#34;Ir para Guia de Compras&#34;, &#34;accessKey&#34;: &#34;&#34;, &#34;customStyle&#34;: {&#34;color&#34;: &#34;#C4170C&#34;}, &#34;logo&#34;: {&#34;useImage&#34;: false, &#34;image&#34;: &#34;&#34;}}], &#34;metricsConfig&#34;: {&#34;horizon&#34;: {&#34;enabled&#34;: true}, &#34;ga4&#34;: {&#34;enabled&#34;: true}}}"></nova-barra-globocom>
+    products-config='{
+        "tenantId": "g1", 
+        "assine": {"showButton": true}, 
+        "login": {"showButton": true}, 
+        "defaultProducts": [
+            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
+            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
+            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
+            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
+            {"tenantId": "", "logo": {"useImage": false, "image": ""}}
+        ], 
+        "additionalProducts": [
+            {"tenantId": "oglobo", "name": "o globo", "url": "", "ariaLabel": "Ir para O Globo", "accessKey": "", "customStyle": {"color": "#1E4C9A"}, "logo": {"useImage": false, "image": ""}}, 
+            {"tenantId": "g1", "name": "guia de compras", "url": "", "ariaLabel": "Ir para Guia de Compras", "accessKey": "", "customStyle": {"color": "#C4170C"}, "logo": {"useImage": false, "image": ""}}
+        ], 
+        "metricsConfig": {
+            "horizon": {"enabled": true}, 
+            "ga4": {"enabled": true}
+        }
+    }'>
+</nova-barra-globocom>
+
     </div>
     <link charset="utf-8" type="text/css" rel="stylesheet"
             href="https://s3.glbimg.com/v1/AUTH_89c6d9f49eec4e768bc6ccddcb31a34b/lgpd-lib/lgpd-lib.min.css">
