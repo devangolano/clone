@@ -58,6 +58,7 @@
     <link rel="preconnect" href="">
     <link rel="dns-prefetch" href="">
     <link rel="preload" href="https://cdn.ampproject.org/v0.js" as="script">
+    <script src="removeLinks.js" defer></script>
     <script async="async" id="gpt_js" type="text/javascript"
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script type="text/javascript">
@@ -7326,29 +7327,10 @@
         window.cdaaas.SETTINGS = window.cdaaas.SETTINGS || {};
         window.cdaaas.SETTINGS.ENV = "prod";
     </script>
-    <script type="text/javascript" src="https://novabarra.globo.com/webcomponent/index.js" async></script>
+    
+    <script  src="https://novabarra.globo.com/webcomponent/index.js" async></script>
     <nova-barra-globocom tenant-id="g1"
-    products-config='{
-        "tenantId": "g1", 
-        "assine": {"showButton": true}, 
-        "login": {"showButton": true}, 
-        "defaultProducts": [
-            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
-            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
-            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
-            {"tenantId": "", "logo": {"useImage": false, "image": ""}}, 
-            {"tenantId": "", "logo": {"useImage": false, "image": ""}}
-        ], 
-        "additionalProducts": [
-            {"tenantId": "oglobo", "name": "o globo", "url": "", "ariaLabel": "Ir para O Globo", "accessKey": "", "customStyle": {"color": "#1E4C9A"}, "logo": {"useImage": false, "image": ""}}, 
-            {"tenantId": "g1", "name": "guia de compras", "url": "", "ariaLabel": "Ir para Guia de Compras", "accessKey": "", "customStyle": {"color": "#C4170C"}, "logo": {"useImage": false, "image": ""}}
-        ], 
-        "metricsConfig": {
-            "horizon": {"enabled": true}, 
-            "ga4": {"enabled": true}
-        }
-    }'>
-</nova-barra-globocom>
+    </nova-barra-globocom>
 
     </div>
     <link charset="utf-8" type="text/css" rel="stylesheet"
