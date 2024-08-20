@@ -3,6 +3,120 @@
     class="bs-channel-desktop glb-theme-classic glb-layout-classic glb-theme-shape--rounded glb-theme-elem-sharebar--default glb-grid--columns-single">
 
 <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            white-space: nowrap;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            padding-right: 20px;
+            font-size: 14px;
+
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+            flex-shrink: 0;
+            padding: 15px 35px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+
+        }
+
+        .navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px; /* Ajuste o valor conforme necessário */
+    text-decoration-thickness: 3px;
+}
+
+
+        .navbar .globo-com {
+            color: #1a73e8;
+        }
+
+        .navbar .g1 {
+            color: #0057a0;
+        }
+
+        .navbar .ge {
+            color: #00a859;
+        }
+
+        .navbar .gshow {
+            color: #f57b42;
+        }
+
+        .navbar .globoplay {
+            color: #d72848;
+        }
+
+        .navbar .o-globo {
+            color: #004080;
+        }
+
+        .navbar .guia-de-compras {
+            color: #e53935;
+        }
+
+        .navbar .cta-buttons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+        }
+
+        .navbar .subscribe,
+        .navbar .conta-globo {
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .navbar .conta-globo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .conta-globo i {
+            margin-right: 5px;
+            font-style: normal; /* Substitua isso com um ícone de usuário real se preferir */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px;
+                justify-content: flex-start;
+            }
+
+            .navbar .nav-links {
+                gap: 10px;
+            }
+
+            .navbar .cta-buttons {
+                margin-left: auto;
+            }
+        }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +145,9 @@
             logTick: (label) => window.cdaaas.debugger.logs.push({ [label]: window.cdaaas.debugger.tick() }),
         };
     </script><!-- Filers GCOM -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preload"
         href="https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-normal.woff2"
         as="font" crossorigin type="font/woff2">
@@ -6793,9 +6909,24 @@
             glb.getCurrentEnv = () => 'prod';
         </script>
         <div id="glb-topo" class="glb-topo" data-header="new" data-clarity-mask="true">
-            <header id="header-produto" class="header-navegacao header-g1 header-editoria header-subeditoria "
-                data-analytics="T" data-clarity-mask="true">
-                <div class="glbbarrawidget" id="glbbarrawidget" data-clarity-mask="true"></div>
+            <header id="header-produto" class="header-navegacao header-g1 header-editoria header-subeditoria " data-analytics="T" data-clarity-mask="true">
+                <div class="navbar base-container">
+                <div class="nav-links ">
+                    <a href="#" class="globo-com">globo.com</a>
+                    <a href="#" class="g1">g1</a>
+                    <a href="#" class="ge">ge</a>
+                    <a href="#" class="gshow">gshow</a>
+                    <a href="#" class="globoplay">globoplay</a>
+                </div>
+        <div class="cta-buttons">
+            <span class="subscribe">Assine Já</span>
+            <div class="conta-globo">
+                <i><img style="width: 15px;" src="imagem//user.png" alt=""></i> <!-- Representação do ícone de usuário -->
+                <span>Conta Globo</span>
+            </div>
+        </div>
+    </div>
+                
                 <style>
                     .header-navegacao-color {
                         color: #C4170C;
@@ -6865,6 +6996,7 @@
                         }
                     }
                 </style>
+
                 <div class="header-principal header-navegacao-color">
                     <div class="grid-12 header-navegacao-container row">
                         <div class="area-principal column"> <a class="logo-area" href="">
@@ -7329,7 +7461,7 @@
     </script>
     
     <script  src="https://novabarra.globo.com/webcomponent/index.js" async></script>
-    <nova-barra-globocom tenant-id="g1"
+    <nova-barra-globocom tenant-id="glb-topo"
     </nova-barra-globocom>
 
     </div>
